@@ -1,0 +1,77 @@
+body{
+    direction: rtl;
+    text-align: right;
+    background-color:#ccff99;
+}
+
+h1{
+    color:#00ccff;
+    text-align: center;
+    font-family: serif;
+    font-size: 300%;
+    font-style: italic;
+}
+
+h2 {
+    color: #cc33ff
+}
+section {
+    display: grid;
+    grid-template-columns: repeat(3,fr);
+    grid-auto-rows: minmax(100px,auto);
+    gap: 10px;
+    grid-template-areas: 
+        "desc pro must"
+        "no found found"
+        "se se se "
+    ;
+}
+.hebrew {
+    color: #0f6e57;
+    font-size: 140%;
+    font-family: 'Nehama', serif;
+}
+#ariel {
+    float: right;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    max-width: 30%;
+}
+#description {
+    grid-area: desc;
+}
+
+#products {
+    grid-area: pro;
+    font-size: 150%;
+}
+
+#musttohave { 
+    grid-area: must;
+
+}
+
+#founds {
+    grid-area: found;
+    color: blue;
+    font-size: 120%;
+    
+}
+
+#search{
+    grid-area: se;
+    border-radius: 5px;
+    background: #17bce6;
+    font-size: 150%;
+}
+
+#bigbox {
+    height: 50px;
+    font-size: 100%;
+    display: inline;
+
+}
+#productslist {
+    font-size: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+}

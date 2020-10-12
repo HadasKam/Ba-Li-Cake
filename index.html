@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <title>Ba-Li Cake</title>
+    <link href='http://serve.fontsproject.com/css?family=Noot:400' rel='stylesheet' type='text/css'>
+    <link href='http://serve.fontsproject.com/css?family=Nehama:400'
+  rel='stylesheet' type='text/css'>
+  
+</head>
+<body>
+    <header>
+    <h1>Ba-Li Cake</h1>
+    </header>
+    <img id="ariel"
+             width="400"   height="550" 
+             src="media/ArielHelp.jpg" 
+             alt="אריאל עוזר להכין עוגה" >
+    <section>
+    <div>
+        
+        <p class="hebrew" id="description">
+            <em>בא לך להכין עוגה מבלי לצאת מהבית?</em><br>
+                הוסיפ/י פה את המצרכים שיש לך בבית<br>
+                ואנחנו נמצא לך את העוגה המושלמת עבורך<br>
+                (בהנחה שיש בבית מוצרי בסיס: מלח, סוכר, שמן, ביצים, קמח, קקאו)
+        </p>
+    </div>
+    <!--the above form was take from w3schools.com-->
+    <div id="products">
+        <form action="products.txt">
+            <label id="productslist" for="pro">רשימת מוצרים,<br> מופרדים ע"י פסיקים:<br></label>
+            <input type="text" id="bigbox"><br>
+            <input type="submit" value="חפש">
+        </form>
+    </div>
+    <div id="musttohave">
+        <h2>תמיד יש בבית<br>דווקא היום חסר לי:</h2>
+        <form action="">
+            <input type="checkbox" id="product1" name="flour" value="flour">
+            <labal for="product1">קמח</labal><br>
+            <input type="checkbox" id="product2" name="eggs" value="eggs">
+            <labal for="product2">ביצים</labal><br>
+            <input type="checkbox" id="product3" name="salt" value="salt">
+            <labal for="product3">מלח</labal><br>
+            <input type="checkbox" id="product4" name="sugar" value="sugar">
+            <labal for="product4">סוכר</labal><br>
+            <input type="checkbox" id="product5" name="oil" value="oil">
+            <labal for="product5">שמן</labal><br>
+            <input type="checkbox" id="product6" name="cocoa" value="cocoa">
+            <labal for="product6">קקאו</labal><br>
+            <input type="submit" value="בחר">
+        </form>
+    </div>
+    <p id="founds">מצאתי כבר {{n-recepts}} מתכונים עבורך</p>
+    <button id="search">מצא לי מתכון</button>
+    </section>
+    
+</body>
+</html>
